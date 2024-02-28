@@ -1,0 +1,9 @@
+/node_modules
+yarn.lock
+.env
+.DS_Store
+/src/log
+/logs
+/uploads
+/src/migrationData
+credentials.ts

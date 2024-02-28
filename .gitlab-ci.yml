@@ -1,0 +1,20 @@
+stages:
+    - build
+
+build:dev:
+    stage: build
+
+    script:
+        - echo "hello!"
+        - cd /home/ubuntu/fig-operational-be
+        - git remote update
+        - git fetch
+        - git pull origin main
+        - yarn
+
+    only:
+        refs:
+            - main
+
+    tags:
+        - fig-be

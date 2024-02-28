@@ -1,0 +1,13 @@
+{
+  "apps": [
+        {
+            "name": "figk-be",
+            "script": "./node_modules/.bin/ts-node",
+	    "args" : "./server.ts",
+            "watch": true,
+	    "env" : {
+	    	"NODE_PATH": "src"
+	    }
+        }
+    ]
+}
